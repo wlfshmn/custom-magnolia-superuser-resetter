@@ -24,11 +24,11 @@
 
         <magnoliaBundleVersion>5.5.6</magnoliaBundleVersion>
 
-        <junit.version>5.3.2</junit.version>
-        <mockito.version>2.23.4</mockito.version>
-        <equalsverifier.version>3.1.4</equalsverifier.version>
+        <junit.version>5.4.0</junit.version>
+        <mockito.version>2.25.1</mockito.version>
+        <equalsverifier.version>3.1.7</equalsverifier.version>
         <checkstyle.version>8.18</checkstyle.version>
-        <pmd.version>6.10.0</pmd.version>
+        <pmd.version>6.12.0</pmd.version>
 
         <!-- Plugin versions, maven-origin -->
         <plugin.antrun.version>1.8</plugin.antrun.version>
@@ -37,12 +37,13 @@
         <plugin.clean.version>3.1.0</plugin.clean.version>
         <plugin.compiler.version>3.8.0</plugin.compiler.version>
         <plugin.dependency.version>3.1.1</plugin.dependency.version>
-        <plugin.deploy.version>2.8.2</plugin.deploy.version>
+        <plugin.deploy.version>3.0.0-M1</plugin.deploy.version>
         <!-- the maven superpom uses -M2 now, so make an exception and use unreleased version -->
         <plugin.enforcer.version>3.0.0-M2</plugin.enforcer.version>
-        <plugin.failsafe.version>2.16</plugin.failsafe.version>
-        <plugin.install.version>2.5.2</plugin.install.version>
+        <plugin.failsafe.version>3.0.0-M3</plugin.failsafe.version>
+        <plugin.install.version>3.0.0-M1</plugin.install.version>
         <plugin.jar.version>3.1.1</plugin.jar.version>
+        <plugin.jxr.version>3.0.0</plugin.jxr.version>
         <!-- The current version of the PMD plugin does not support the '8' syntax for the
         source level. Review this limitation on upgrade. -->
         <plugin.pmd.version>3.11.0</plugin.pmd.version>
@@ -50,14 +51,14 @@
         <plugin.site.version>3.7.1</plugin.site.version>
         <plugin.source.version>3.0.1</plugin.source.version>
         <!-- Surefire 2.22 or more recent required to support Junit5 natively -->
-        <plugin.surefire.version>2.22.1</plugin.surefire.version>
+        <plugin.surefire.version>3.0.0-M3</plugin.surefire.version>
         <plugin.war.version>3.2.2</plugin.war.version>
 
         <!-- Plugin versions, third-party-origin -->
-        <plugin.fmt.version>2.7</plugin.fmt.version>
-        <plugin.spotbugs.version>3.1.10</plugin.spotbugs.version>
+        <plugin.fmt.version>2.8</plugin.fmt.version>
+        <plugin.spotbugs.version>3.1.11</plugin.spotbugs.version>
         <plugin.versions.version>2.7</plugin.versions.version>
-        <plugin.jacoco.version>0.8.2</plugin.jacoco.version>
+        <plugin.jacoco.version>0.8.3</plugin.jacoco.version>
 
     </properties>
 
@@ -476,7 +477,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jxr-plugin</artifactId>
-                <version>3.0.0</version>
+                <version>${plugin.jxr.version}</version>
             </plugin>
         </plugins>
     </reporting>
